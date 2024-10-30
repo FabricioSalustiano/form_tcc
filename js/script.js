@@ -49,3 +49,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         console.error('Erro:', error);
     });
 });
+
+function limparCampos() {
+    alert("Realizar logica de limpar campos!");
+}
