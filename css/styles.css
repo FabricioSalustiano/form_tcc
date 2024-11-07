@@ -33,7 +33,7 @@ header {
     padding: 20px;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 label {
@@ -49,12 +49,6 @@ input, select {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.container-botoes {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
 }
 
 .btn-limpar {
@@ -73,86 +67,15 @@ input, select {
 }
 
 .btn-registrar {
-    background-color: #a73bda; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    font-size: 16px;
-    transition: background-color 0.3s;
+    background-color: #a73bda;
+    border: none;
 }
 
 .btn-registrar:hover {
     background-color: #72189D;
+    border: none;
 }
 
-.notification {
-    height: 8%;
-    width: 20%;
-    background-color: #C1F7EE;
-    margin-top: 5%;
-    margin-left: 76%;
-    transform-origin: right;
-    -webkit-animation: notify 3s ease-in-out infinite;
-    animation: notify 3s ease-in-out infinite;
-  }
-
-  @-webkit-keyframes notify {
-    0% {transform: scaleX(0);}
-    10% {transform: scaleX(1);}
-    13% {transform: scale(1.1);}
-    16% {transform: scale(1);}
-    55% {transform: scaleX(1); border-radius: 0%;}
-    65% {transform: scaleX(0.25); border-radius: 50%;}
-    95% {transform: scaleX(0.25); border-radius: 50%;}
-    100% {transform: scaleX(0);}
-  }
-  
-  @keyframes notify {
-    0% {transform: scaleX(0);}
-    10% {transform: scaleX(1);}
-    13% {transform: scale(1.1);}
-    16% {transform: scale(1);}
-    55% {transform: scaleX(1); border-radius: 0%;}
-    65% {transform: scaleX(0.25); border-radius: 50%;}
-    95% {transform: scaleX(0.25); border-radius: 50%;}
-    100% {transform: scaleX(0);}
-  }
-
-  .identifier {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: #94DACD;
-    margin-top: 5.5px;
-    margin-left: 7.5px;
-    -webkit-animation: exit 3s ease-in-out infinite;
-    animation: exit 3s ease-in-out infinite;
-  }
-  
-  .text {
-    position: absolute;
-    height: 6px;
-    width: 70px;
-    background-color: #94DACD;
-    margin-top: 12.25px;
-    margin-left: 40px;
-    -webkit-animation: exit 3s ease-in-out infinite;
-    animation: exit 3s ease-in-out infinite;
-  }
-
-  @-webkit-keyframes exit {
-    0% {opacity: 1;}
-    55% {opacity: 1;}
-    65% {opacity: 0;}  
-    100% {opacity: 0;}
-  }
-  
-  @keyframes exit {
-    0% {opacity: 1;}
-    55% {opacity: 1;}
-    65% {opacity: 0;}  
-    100% {opacity: 0;}
-  }
+#spinner {
+    display: none;
+}
